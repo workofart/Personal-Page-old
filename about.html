@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to Henry's Page</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Header Font -->
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	<!-- Text Font -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<style>
+	body { 
+		/*linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),*/
+		background-image: url("img/skyline.jpg");
+		background-size: cover;
+		/*background-color: rgba(0, 0, 0, 0.2);  	*/
+			  /*background: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1));
+			  background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1));
+			  background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));*/
+
+			}
+			.darken {
+				background-color: rgba(0, 0, 0, 0.2);  	
+			}
+			.header-font {
+				font-family: 'Comfortaa', cursive;
+			}
+			.text-font {
+				font-family: 'Raleway', sans-serif;
+			}
+			</style>
+			<script>
+			$(function () {
+				$('[data-toggle="popover"]').popover()
+			})
+			</script>
+			<!-- Navigation Bar -->
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						<div class="navbar-header">
+
+							<p class="navbar-text"><span class="glyphicon glyphicon-header" aria-hidden="true"></span>  |  Welcome</p>	
+						</div>
+
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="about.html">About me</a></li>
+						<li><a href="#">Projects</a></li> <!-- Still need work -->
+						<li><a href="#">Others(TBD)</a></li> <!-- Still need work -->
+					</ul>
+				</div>
+			</nav>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			<!-- Big Header -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="darken col-md-4 col-md-offset-1">
+						<div class="page-header header-font">
+
+							<h1><img src="img/student.png" alt=""> About me</h1>
+						</div>
+						<!-- Academic Background -->
+						<div class="panel panel-primary text-font">
+							<div class="panel-heading">
+								<h3 class="panel-title">Academic Background:</h3>
+							</div>
+							<ul class="list-group">
+								<li class="list-group-item">Economics <span class="badge progress-bar-info">2011-2013</span></li>
+								<li class="list-group-item">Business Administration <span class="badge progress-bar-info">2013-2014</span></li>
+								<li class="list-group-item">Computer Science and Economics <span class="badge progress-bar-info">2014-2016 expected</span></li>
+							</ul>
+						</div>
+
+						<!-- Work Background -->
+						<div class="panel panel-warning text-font">
+							<div class="panel-heading">
+								<h3 class="panel-title">Work Background:</h3>
+							</div>
+							<ul class="list-group">
+								<li class="list-group-item">Consulting Firm - Business Technology Analyst <span class="badge progress-bar-warning">2014 Summer - Toronto, Canada</span></li>
+								<li class="list-group-item">Consulting Firm - Part-time Assistant <span class="badge progress-bar-warning">2013 Summer - Beijing, China</span></li>
+								<li class="list-group-item">NGO - Event Coordinator <span class="badge progress-bar-warning">2012 Summer - Beijing, China</span></li>
+								<li class="list-group-item">Bank - Customer Service <span class="badge progress-bar-warning">2011 Summer - Beijing, China</span></li>
+							</ul>
+						</div>
+
+						<!-- Cultural Background -->
+						<div class="panel panel-success text-font">
+							<div class="panel-heading">
+								<h3 class="panel-title">Cultural Background:</h3>
+							</div>
+							<ul class="list-group">
+								<li class="list-group-item">University <span class="badge progress-bar-success">Canada</span></li>
+								<li class="list-group-item">Middle School & High School <span class="badge progress-bar-success">China</span></li>
+								<li class="list-group-item">Elementary School <span class="badge progress-bar-success">China, Japan, Canada</span></li>
+							</ul>
+						</div>	
+					</div>
+					<br>
+					<!-- Popover Button -->
+					<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+					<br>
+					<br>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+						Launch demo modal
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+					<!-- Include all compiled plugins (below), or include individual files as needed -->
+					<script src="js/bootstrap.min.js"></script>
+				</body>
+				</html>
