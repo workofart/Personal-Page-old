@@ -30,6 +30,7 @@
 			}
 			.whiten {
 				background-color: rgba(255, 255, 255, 0.4);
+				padding: 15px;
 			}
 			.header-font {
 				font-family: 'Comfortaa', cursive;
@@ -45,45 +46,42 @@
 				position: fixed;
 				background-color: rgba(255, 255, 255, 0.5);
 			}
+			.todolist {
+				background-color: rgba(240,248,255,0.6);
+			}
 			</style>
 
 			
-			<a class="btn btn-primary btn-lg" href="../project.html" role="button">Back to projects</a>
+			<a class="btn btn-danger btn-lg" href="../project.html" role="button">Back to projects</a>
 
-			<div class="container">
+			<div class="container" onload="numItems()">
 				<div class="row">
-					<div class="col-md-5 col-md-offset-2 text-font darken">
+					<div class="col-md-5 col-md-offset-2 text-font todolist">
 						<div class="table-responsive">
-							<table class="table table-hover">
+							<table class="table table-striped">
+								<div class="header">
+									<center><h3>To-dos <span class="label label-default" id="itemCount">0 items</span></h3>
+										<br>
+										<input type="text" placeholder="Type a new item" id="itemInput">
+
+										<button type="button" class="btn btn-primary" id="add" onclick="addItem();numItems()">Add</button>
+										<button type="button" class="btn btn-danger" id="delete" onclick="deleteItem();numItems()">Delete</button>
+									</center>
+								</div>
 								<tbody id="itemList">
-								<!-- Row 1-->
-								<tr id="row1">
-									<td></td>
-									<td><h3>To-dos</h3></td>
-								</tr>
+									<!-- add items here -->
 								</tbody>
 							</table>
-						</div>
-						<button type="button" class="btn btn-primary" id="add" onclick="addItem()">Add</button>
-						<button type="button" class="btn btn-danger" id="delete" onclick="deleteContent()">Delete</button>
-						
-
-						<input type="text" placeholder="Type a new item" id="itemInput">
+						</div>					
 					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5 col-md-offset-5 well text-font">
-				<h4>Testing Area</h4>			
-				<button type="button" class="btn btn-primary" id="test" onclick="test()">Test</button>
+					<div class="col-md-4 col-md-offset-1 well text-font">
+						<h4>Testing Area</h4>			
+						<button type="button" class="btn btn-primary" id="test" onclick="numItems()">Test</button>
 						<button type="button" class="btn btn-warning" id="untest" onclick="unTest()">Untest</button>
 					</div>
 				</div>
 			</div>
-			
+
 
 
 			<!-- Footer -->
