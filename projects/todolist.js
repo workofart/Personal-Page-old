@@ -1,23 +1,36 @@
 function addItem() {
-	var content = document.getElementById("itemInput").value;
-	var s = '<td>>></td><td></td>';
+	var content = document.getElementById("itemInput");
+	var numElems = numItems() + 1; // adjust discrepancies
+	var s = '<td id="item' + numElems + '"><button type="button" class="btn" onclick="deleteItem(' + numElems + ');numItems()"><span class="glyphicon glyphicon-ok"></span></button></td><td></td>';
 	var newNode = document.createElement("tr");
 	newNode.innerHTML = s;
 	// append node
 	document.getElementById("itemList").appendChild(newNode);
 	var lastC = document.getElementById('itemList').lastChild.lastChild;
 	// add the item in the last child node
-	lastC.innerHTML = content;
+	lastC.innerHTML = content.value;
+	content.value = "";
 
 }
 
-function deleteItem() {
-	document.getElementById('itemList').removeChild(document.getElementById('itemList').lastChild);
+function deleteAllItems() {
+	while (numItems() >0){
+		document.getElementById('itemList').removeChild(document.getElementById('itemList').lastChild);
+	}
 	
+}
+function deleteItem (n1) {
+	var str = "item".concat(n1);
+	var target = document.getElementById(str).parentNode;
+	target.parentNode.removeChild(target);
 }
 
 function test() {
-	document.getElementById("item").innerHTML= "TEST";
+	// document.getElementById("item").innerHTML= "TEST";
+	// get the parent of the parent of the option, which is the tr, assign it to target
+	var target = this.parentNode.parentNode;
+	// remove the target node
+	target.parentNode.removeChild(target);
 }
 
 function unTest() {
@@ -45,4 +58,5 @@ function numItems () {
 	}
 	
 	document.getElementById("itemCount").innerHTML = count + " items";
+	return count;
 }
