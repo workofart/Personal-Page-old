@@ -9,3 +9,5 @@ Personal Page
 
 index.html
 about.html
+project.html
+current.html
