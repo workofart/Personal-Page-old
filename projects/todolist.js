@@ -25,12 +25,46 @@ function deleteItem (n1) {
 	target.parentNode.removeChild(target);
 }
 
+function numItems () {
+	var w = document.getElementById('itemList');
+	var count = 0; // this will contain the total elements.
+	for (var i = 0; i < w.childNodes.length; i++) {
+		var node = w.childNodes[i];
+		if (node.nodeName == "TR") {
+			count++;
+		}
+	}
+	document.getElementById("itemCount").innerHTML = count + " items";
+	return count;
+}
+
+function exportResults () {
+	var A = [['To-do'+ ' List']];  // initialize array of rows with header row as 1st item
+	// retrieving the data in the table
+	var w = document.getElementById('itemList');
+	for (var i = 1; i <= numItems(); i++) {
+	// var node = w.childNodes[i];
+	A.push(["",document.getElementById("item".concat(i)).nextSibling.innerHTML]);
+}
+var csvRows = [];
+for(var j=0,l=A.length; j<l; ++j){
+		csvRows.push(A[j].join(',\n'));   // unquoted CSV row
+	}
+	
+	// joining all the rows
+	var csvString = csvRows.join("\n\n");
+	var a = document.createElement('a');
+	a.href     = 'data:attachment/csv;charset=utf8,' + csvString;
+	a.target   = '_blank';
+	a.download = 'toDoList.csv';
+	document.body.appendChild(a);
+	a.click();
+}
+
+/****************** Testing ***********************/
+
 function test() {
-	// document.getElementById("item").innerHTML= "TEST";
-	// get the parent of the parent of the option, which is the tr, assign it to target
-	var target = this.parentNode.parentNode;
-	// remove the target node
-	target.parentNode.removeChild(target);
+
 }
 
 function unTest() {
@@ -47,16 +81,3 @@ function testing () {
 	document.getElementById("demo").innerHTML = text;
 }
 
-function numItems () {
-	var w = document.getElementById('itemList');
-	var count = 0; // this will contain the total elements.
-	for (var i = 0; i < w.childNodes.length; i++) {
-		var node = w.childNodes[i];
-		if (node.nodeName == "TR") {
-			count++;
-		}
-	}
-	
-	document.getElementById("itemCount").innerHTML = count + " items";
-	return count;
-}
