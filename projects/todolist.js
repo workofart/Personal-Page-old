@@ -40,8 +40,6 @@ function numItems () {
 
 function exportResults () {
 	var A = [['To-do'+ ' List']];  // initialize array of rows with header row as 1st item
-	// retrieving the data in the table
-	var w = document.getElementById('itemList');
 	for (var i = 1; i <= numItems(); i++) {
 	// var node = w.childNodes[i];
 	A.push(["",document.getElementById("item".concat(i)).nextSibling.innerHTML]);
