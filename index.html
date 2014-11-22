@@ -24,6 +24,7 @@
 	}
 	.header-font {
 		font-family: 'Comfortaa', cursive;
+		font-size: 60px;
 	}
 	.text-font {
 		font-family: 'Raleway', sans-serif;
@@ -36,6 +37,46 @@
 		position: fixed;
 		background-color: rgba(255, 255, 255, 0.5);
 	}
+	.large-banner{
+		/*margin-left: 80px;*/
+		vertical-align: middle;
+		padding-left: 80px;
+		padding-right: 80px;
+		padding-bottom: 80px;
+		padding-top: 10px;
+		margin-top: 45px;
+		background-color: rgba(64,64,64,0.75);
+		text-align: center;
+		box-shadow: 0 0 10px black;
+	}
+	.banner-font {
+		color: white;
+		margin-bottom: 40px;
+	}
+	.banner-button{
+		/*border-color: #FFFFFF;*/
+		margin-top: 50px;
+		border: 1px solid #EFFCFD;
+		border-radius: 15px;
+		box-shadow: 0 0 5px white;
+		/*padding: 10px;*/
+		width: 600px;
+		height: 100px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 24px;
+		color: #EFFCFD;
+		background-color: rgba(0,0,0,0);
+		text-transform: uppercase;
+	}
+	.banner-button:hover{
+		color: #000000;
+		background-color: rgba(255,255,255,1);
+		box-shadow: 0 0 5px black;
+	}
+	.content {
+		padding: 30px;
+		margin: 30px;
+	}
 	</style>
 
 	<!-- Popover button -->
@@ -47,88 +88,74 @@
 	
 	<!-- Navigation Bar -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<ul class="nav navbar-nav">
-				<div class="navbar-header">
+		<ul class="nav navbar-nav">
+			<div class="navbar-header">
 
-					<p class="navbar-text"><span class="glyphicon glyphicon-header" aria-hidden="true"></span>  |  Welcome</p>	
-				</div>
+				<p class="navbar-text"><span class="glyphicon glyphicon-header" aria-hidden="true"></span>  |  Welcome</p>	
+			</div>
 
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About me</a></li>
-				<li><a href="project.html">Projects</a></li> <!-- Still need work -->
-				<li><a href="current.html">Random Stuff</a></li> <!-- Still need work -->
-			</ul>
-		</div>
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="about.html">About me</a></li>
+			<li><a href="project.html">Projects</a></li> <!-- Still need work -->
+			<li><a href="current.html">Random Stuff</a></li> <!-- Still need work -->
+		</ul>
 	</nav>
 
-	<br>
-	<br>
-	<br>
-	<br>
 
 	<!-- Big Header -->
-	<div class="container-fluid">
-		<div class="row">
+	
+	
 
-			<!-- Henry's Page Box -->
-			<div class="darken col-md-4 col-md-offset-1">
-				<div class="page-header header-font">
+	<!-- Henry's Page Box -->
+	<div class="large-banner banner-font">
+		<div class="header-font">
+			<h1><img src="img/student.png" alt=""> Henry's Page</h1>
+		</div>
+		<div class="text-font banner-font">
+			<h3>I am a student studying computer science and economics</h3>
+			<h3>Feel free to poke around!</h3>
+		</div>
+		
+			<!-- Banner Button -->
+			<a href="about.html"><button type="button" class="banner-button"><span class="glyphicon glyphicon-user"></span> Learn More</button></a>
+	</div>  <!-- end large banner -->
+</div> <!-- End row -->
+</div> <!-- End container -->
 
-					<h1><img src="img/student.png" alt=""> Henry's Page</h1>
+<!-- Interests Box-->
+			<div class="row content">
+				<div class="col-md-2 col-md-offset-1 well">
+						<span class="label label-info">Interests</span>						
+						<div class="caption" data-toggle="tooltip" title="Java, HTML/CSS, Unix/Linux, Shell Script, C/C++, Javascript (learning), Python (learning)" data-placement="bottom">
+							<center>
+								<img src="img/coding_icon.png" alt="" class="img-responsive">	
+								<h3>Programming</h3>
+							</center>
+						</div>
 				</div>
-				<div class="text-font">
-					<p>I am a <span class="label label-default">Student</span> studying <span class="label label-danger">computer science</span> and <span class="label label-danger">economics.</span></p>
-					<p>Feel free to poke around!</p>
+
+				<!-- Interests Box-->
+				<div class="col-md-2 col-md-offset-2 well">
+						<span class="label label-info">Interests</span>						
+						<div class="caption" data-toggle="tooltip" title="Lived in three different countries, what a journey! Looking forward to an around-the-world-trip!" data-placement="bottom">
+							<center>
+								<img src="img/location.png" alt="" class="img-responsive">	
+								<h3>Travelling</h3>
+							</center>
+						</div>
 				</div>
-			</div>
-			
 
-			<!-- Interests Box-->
-			<div class="col-sm-2 col-xs-offset-1">
-				<div class="thumbnail header-font">
-					<span class="label label-info">Interests</span>						
-					<div class="caption" data-toggle="tooltip" title="Java, HTML/CSS, Unix/Linux, Shell Script, C/C++, Javascript (learning), Python (learning)" data-placement="bottom">
-						<center>
-							<img src="img/coding_icon.png" alt="" class="img-responsive">	
-							<h3>Programming</h3>
-						</center>
-					</div>
+				<!-- Interests Box-->
+				<div class="col-md-2 col-md-offset-2 well">
+						<span class="label label-info">Interests</span>			
+						<div class="caption" data-toggle="tooltip" title="Check out my blog post with a one-sentence summary of the books I've read" data-placement="bottom">			
+							<center>
+								<img src="img/book.png" alt="" class="img-responsive">	
+								<h3>Reading</h3>
+							</center>
+						</div>
 				</div>
-			</div>
-
-			<!-- Interests Box-->
-			<div class="col-sm-2 col-md-2">
-				<div class="thumbnail header-font">
-					<span class="label label-info">Interests</span>						
-					<div class="caption" data-toggle="tooltip" title="Lived in three different countries, what a journey! Looking forward to an around-the-world-trip!" data-placement="bottom">
-						<center>
-							<img src="img/location.png" alt="" class="img-responsive">	
-							<h3>Travelling</h3>
-						</center>
-					</div>
-				</div>
-			</div>
-
-			<!-- Interests Box-->
-			<div class="col-sm-2">
-				<div class="thumbnail header-font">
-					<span class="label label-info">Interests</span>			
-					<div class="caption" data-toggle="tooltip" title="Check out my blog post with a one-sentence summary of the books I've read" data-placement="bottom">			
-						<center>
-							<img src="img/book.png" alt="" class="img-responsive">	
-							<h3>Reading</h3>
-						</center>
-					</div>
-				</div>
-			</div>
-
-		</div> <!-- End row -->
-	</div> <!-- End container -->
-
-
-
-<!-- Space for testing -->
+			</div> <!-- End col-md-8 -->
 <br>
 <br>
 <br>
@@ -149,31 +176,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 <!-- Footer -->
 <div class="footer">
 	<div class="small"><center>Copyright &copy 2014 Henry Pan &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp hanxiangp@gmail.com</center></div>

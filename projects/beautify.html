@@ -45,7 +45,42 @@
 			}
 			.whiten-more {
 				background-color: rgba(240,248,255,0.6);
-				padding: 30px;
+				padding: 10px;
+			}
+			button:hover {
+				color: white;
+				background-color: rgba(127,127,127,0.1);
+			}
+			button:active{
+				color: red;
+				background-color: white;
+			}
+			.snapShot{
+				position: block;
+				height: 18%;
+				width: 44%;
+				border: 1.8px solid #000000;
+				padding: 3px;
+				margin: 5px;
+
+			}
+			.snapShot:hover{
+				background: #000000;
+				opacity: 0.7;
+			}
+			.videoSnap{
+				height: 80%;
+				width: 100%;
+				border: 2px solid #000000;
+				padding: 1px;
+			}
+			.iframe-import{
+				/*margin: 200px;*/
+				margin: 3%;
+				width: 772px;
+				height: 600px;
+				border: 3px solid;
+				vertical-align: middle;
 			}
 			</style>
 
@@ -55,15 +90,15 @@
 			<br>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 whiten-more text-font">
+					<div class="col-md-3 whiten-more text-font">
 						<h1>Toolkit</h1>
-						<button type="button" class="button btn-primary"id="test1" onclick="clearCanvas()">Clear Canvas</button>
-						<button type="button"  class="button btn-danger"id="test2" onmousedown="zoomIn()" onmouseup="zoomOut()">Zoom!</button>
-						<button type="button" class="button btn-default" id="test3" onclick="addShadow()">Add Shadow</button>
-						<br>
-						<br>
 						<button type="button" class="button btn-warning" id="test4" onclick="animatedZoom()">Animated Zoom</button>
-						<button type="button" id="test5">Test5</button>
+						<button type="button"  class="button btn-danger"id="test2" onmousedown="zoomIn()" onmouseup="zoomOut()">Zoom!</button>
+						<br>
+						<br>
+						<button type="button" class="button btn-default" id="test3" onclick="addShadow()">Add Shadow</button>
+						<button type="button" class="button btn-primary"id="test1" onclick="clearCanvas()">Clear Canvas</button>
+						
 					</div>
 				</div>
 			</div>
@@ -72,11 +107,23 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 whiten-more text-font">
-						<h1>Canvas</h1>
+						<h3>Canvas</h3>
 						<canvas id="myCanvas">
 							
 						</canvas>
 					</div>
+					<div class="col-md-4 whiten-more text-font">
+						<h3>Images</h3>
+						<img class="snapShot" src="../img/beautify/blue.png" alt="">
+						<img class="snapShot" src="../img/beautify/blueprint.jpg" alt="">
+						<img class="snapShot" src="../img/beautify/Brain.png" alt="">
+						<img class="snapShot" src="../img/beautify/ocean.jpg" alt="">
+					</div>
+					<div class="col-md-4 whiten-more text-font">
+						<h3>Music/Video</h3>
+						<audio src="../sound/Davichi.mp3" controls></audio>
+						<video class="videoSnap" src="../video/test.mp4" controls poster="../img/video.ico"></video>
+					</div>
 				</div>
 			</div>
 			<br>
@@ -84,12 +131,34 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 whiten-more text-font">
-						<h1>Buttons</h1>
+						<h3>Link Pseudo Classes</h3>
+						<button>Test</button>
+					</div>
+					<div class="col-md-4 whiten-more text-font">
+						<h3>Placeholder</h3>
+					</div>
+					<div class="col-md-4 whiten-more text-font">
+						<h3>Placeholder</h3>
+						<button>Test</button>
 					</div>
 				</div>
 			</div>
+			<br>
+			<br>
 
-			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 whiten-more text-font">
+						<h3>Inline Frame</h3>
+						<iframe class="iframe-import" src="http://www.westerncalendar.uwo.ca/2014/" seamless frameborder="0"></iframe>
+					</div>
+					
+				</div>
+				
+			</div>
+
+
+
 			<!-- Footer -->
 			<div class="footer">
 				<div class="small"><center>Copyright &copy 2014 Henry Pan &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp hanxiangp@gmail.com</center></div>
