@@ -82,6 +82,41 @@
 				border: 3px solid;
 				vertical-align: middle;
 			}
+			.basic-info{
+				border-radius: 5px;
+				border: 1px solid #000000;
+				margin: 10px;
+				padding: 10px;
+			}
+			.other-info{
+				border-radius: 5px;
+				border: 1px solid #000000;
+				margin: 10px;
+				padding: 10px;
+			}
+			.basic-info input{
+				background: #fff;
+				border: 1px solid #c6c7cc;
+				box-shadow: inset 0 2px 2px rgba(0, 0, 0, .3);
+				color: #636466;
+				padding: 6px;
+				margin-top: 6px;
+			}
+			input .button{
+				background: linear-gradient(#49708f, #293f50);
+				border: 0;
+				color: #fff;
+				cursor: pointer;
+				font-weight: bold;
+				float: left;
+				padding: 8px 16px;
+			}
+			.button {
+				border-radius: 5px;
+				padding-left: 10px;
+				padding-right: 10px;
+				margin: 3px;
+			}
 			</style>
 
 			<a class="btn btn-danger btn-lg" href="../project.html" role="button">Back to projects</a>
@@ -135,7 +170,45 @@
 						<button>Test</button>
 					</div>
 					<div class="col-md-4 whiten-more text-font">
-						<h3>Placeholder</h3>
+						<h3>Form Testers</h3>
+						<form action="/login" method="post">
+							<fieldset class="basic-info">
+								<legend>Basic Info</legend>
+								<label for="username">Username:<input type="text" name="username" required></label>
+								<br>
+								<label for="password">Password: <input type="password" name="password" required></label>
+								<br>
+								<label for="cpassword">Confirm Password: <input type="password" name="cpassword" required></label>
+								<br>
+								<label for="email">Email: <input type="email" name="email" placeholder="name@domain.com" required></label><br>
+								<label for="country">Country: <select name="country" id="country" required>
+									<option value="China">China</option>
+									<option value="Japan">Japan</option>
+									<option value="Canada">Canada</option>
+								</select></label>
+								<br>
+								<input type="checkbox" name="spam" value="spam" required>Receive Spam<br>	
+								<textarea name="coverletter" id="" cols="50" rows="10">Add Cover Letter</textarea>
+								<br>								
+								Upload a resume: <input type="file" name="file">
+								<br>
+								<button class="button btn-primary">Submit</button>
+								<!-- <input class="button" type="submit" name="submit" value="Submit"> -->
+							</fieldset>
+							<fieldset class="other-info">
+								<legend>Other Info</legend>
+								<label for="range">Range: <input type="range" name="range"></label>
+								<br>
+								<label for="search">Search: <input type="search" name="search"></label>
+								<br>
+								<label for="tel">Tel: <input type="tel" name="tel"></label>
+								<br>
+								<label for="url">Url: <input type="url" name="url"></label>
+								<br>
+								<label for="date">Date: <input type="date" name="date">
+								</label>
+							</fieldset>
+						</form>
 					</div>
 					<div class="col-md-4 whiten-more text-font">
 						<h3>Placeholder</h3>
