@@ -2,6 +2,8 @@ var num1 = 0;
 var num2 = 0;
 var operator;
 var displayNum = document.getElementById('display');
+var decimal =0;
+
 /*********************** Operation Functions**************/
 function addition () {
 	var sum;
@@ -42,7 +44,20 @@ function percentage () {
 // Append the current num at the end of the num1
 function display (num) {
 	// this.num1 = Number(displayNum.innerHTML);
-	this.num1 = this.num1 * 10 + num;
+	if (num === ".") {
+		decimal++; // trigger decimal, increment counter
+	}
+	else if (decimal !== 0){		
+	// decrease the num by decimal times
+		for (var i = 0; i < decimal;i++){
+			num = num * 0.1;
+		}
+		this.num1  = this.num1 + num;
+		decimal++;
+	}
+	else {// else add the num to num1
+		this.num1 = this.num1 * 10 + num;
+	}
 	displayNum.innerHTML = this.num1;
 }
 
@@ -54,6 +69,7 @@ function assignOperator(operator){
 	// this.num1 = Number(displayNum.innerHTML);
 	this.num2 = this.num1;
 	// prepare for the next input
+	decimal = 0; // reset decimal
 	this.num1 = 0;
 
 }
@@ -81,4 +97,5 @@ function reset () {
 	this.num2 = 0;
 	this.operator = "";
 	displayNum.innerHTML = 0;
+	decimal = 0;
 }
