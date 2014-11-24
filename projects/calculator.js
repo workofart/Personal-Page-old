@@ -1,4 +1,5 @@
-var num1, num2 = 0;
+var num1 = 0;
+var num2 = 0;
 var operator;
 var displayNum = document.getElementById('display');
 /*********************** Operation Functions**************/
@@ -40,13 +41,8 @@ function percentage () {
 
 // Append the current num at the end of the num1
 function display (num) {
-	this.num1 = Number(displayNum.innerHTML);
-	// if (this.num1 === 0) {
-		this.num1 = this.num1 * 10 + num;
-	// }
-	// else if (this.num1 !== 0 && this.num2 === 0) {
-		// this.num2 = this.num2 * 10 + num; // else num1 has been initialized, append to num2
-	// }
+	// this.num1 = Number(displayNum.innerHTML);
+	this.num1 = this.num1 * 10 + num;
 	displayNum.innerHTML = this.num1;
 }
 
@@ -57,7 +53,8 @@ function assignOperator(operator){
 	// asssign the current display value to num1
 	// this.num1 = Number(displayNum.innerHTML);
 	this.num2 = this.num1;
-	displayNum.innerHTML = 0;
+	// prepare for the next input
+	this.num1 = 0;
 
 }
 
@@ -69,7 +66,7 @@ function evaluateExp () {
 		displayNum.innerHTML = subtract();
 	else if (this.operator ==="*")
 		displayNum.innerHTML = multiply();
-	else if (this.operator ===" /")
+	else if (this.operator ==="/")
 		displayNum.innerHTML = divide();
 	else
 		displayNum.innerHTML = num2;
