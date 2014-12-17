@@ -25,6 +25,9 @@
 			  background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));*/
 
 			}
+				.navbar{
+		opacity: 0.9;
+	}
 			.darken {
 				background-color: rgba(0, 0, 0, 0.2);  	
 			}
@@ -47,9 +50,13 @@
 			}
 			.gradient-container{
 				background: linear-gradient(to right bottom,#3CAFFC,#1E5E87);
-				color: #ECF0F1;
+				color: linear-gradient(to right bottom,#3CAFFC,#1E5E87);
 				box-shadow: 0 2px 2px rgba(44,62,80,0.7);
 				padding: 30px;
+				-webkit-transition: color 0.5s ease-out;	
+			}
+			.gradient-container:hover{
+				color: #ECF0F1;
 			}
 			.btn-default{
 				box-shadow: 0 1px 1px black;
@@ -65,22 +72,20 @@
 
 			<!-- Navigation Bar -->
 			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-				<div class="container">
-					<ul class="nav navbar-nav">
-						<div class="navbar-header">
+				<ul class="nav navbar-nav">
+					<div class="navbar-header">
 
-							<p class="navbar-text"><span class="glyphicon glyphicon-header" aria-hidden="true"></span>  |  Welcome</p>	
-						</div>
+						<p class="navbar-text"><span class="glyphicon glyphicon-header" aria-hidden="true"></span>  |  Welcome</p>	
+					</div>
 
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About me</a></li>
-						<li class="active"><a href="project.html">Projects</a></li> <!-- Still need work -->
-						<li><a href="current.html">Random Stuff</a></li> <!-- Still need work -->
-					</ul>
-				</div>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About me</a></li>
+					<li class="active"><a href="project.html">Projects</a></li> <!-- Still need work -->
+					<li><a href="current.html">Random Stuff</a></li> <!-- Still need work -->
+				</ul>
 			</nav>
 
-		
+
 			<br>
 			<br>
 			<br>
@@ -92,7 +97,7 @@
 						<div class="jumbotron header-font gradient-container">
 							<h1>To-do List</h1>
 							<p>Made with Javascript</p>
-								<p><a class="btn btn-default btn-lg" href="projects/todolist.html" role="button">Check it out</a></p>
+							<p><a class="btn btn-default btn-lg" href="projects/todolist.html" role="button">Check it out</a></p>
 							<ul class="text-font">
 								<li>Add items</li>
 								<li>Delete items</li>
@@ -105,7 +110,7 @@
 						<div class="jumbotron header-font gradient-container">
 							<h1>Snake Game</h1>
 							<p>Made with Javascript</p>
-								<p><a class="btn btn-default btn-lg" href="projects/snake.html" role="button">Check it out</a></p>
+							<p><a class="btn btn-default btn-lg" href="projects/snake.html" role="button">Check it out</a></p>
 							<ul class="text-font">
 								<li>With score count</li>
 								<li>AI</li>
@@ -119,7 +124,7 @@
 						<div class="jumbotron header-font gradient-container">
 							<h1>Beautify HTML</h1>
 							<p>Made with Javascript</p>
-								<p><a class="btn btn-default btn-lg" href="projects/beautify.html" role="button">Check it out</a></p>
+							<p><a class="btn btn-default btn-lg" href="projects/beautify.html" role="button">Check it out</a></p>
 							<ul class="text-font">
 								<li>HTML elements manipulation</li>
 								<li>Canvas Drawing</li>
@@ -127,12 +132,12 @@
 							</ul>
 						</div>			
 					</div>
-				
+
 					<div class="col-md-5 col-md-offset-1">
 						<div class="jumbotron header-font gradient-container">
 							<h1>Data Visualization</h1>
 							<p>Made with Javascript</p>
-								<p><a class="btn btn-default btn-lg" href="projects/data.html" role="button">Check it out</a></p>
+							<p><a class="btn btn-default btn-lg" href="projects/data.html" role="button">Check it out</a></p>
 							<ul class="text-font">
 								<li>Bar Graph</li>
 								<li>Line Graph</li>
@@ -147,7 +152,7 @@
 						<div class="jumbotron header-font gradient-container">
 							<h1>Calculator</h1>
 							<p>Made with Javascript</p>
-								<p><a class="btn btn-default btn-lg" href="projects/calculator.html" role="button">Check it out</a></p>
+							<p><a class="btn btn-default btn-lg" href="projects/calculator.html" role="button">Check it out</a></p>
 							<ul class="text-font">
 								<li>Add/subtract/multiply/divide</li>
 								<li>And many more...</li>
@@ -159,7 +164,7 @@
 						<div class="jumbotron header-font gradient-container">
 							<h1>Placeholder</h1>
 							<p>Placeholder</p>
-								<p><a class="btn btn-default btn-lg" href="projects/Multiscreen.html" role="button">Check it out</a></p>
+							<p><a class="btn btn-default btn-lg" href="projects/Multiscreen.html" role="button">Check it out</a></p>
 							<ul class="text-font">
 								<li></li>
 								<li></li>

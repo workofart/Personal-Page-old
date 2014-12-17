@@ -26,6 +26,9 @@
 			  background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));*/
 
 			}
+			.navbar{
+				opacity: 0.9;
+			}
 			.darken {
 				background-color: rgba(0, 0, 0, 0.2);  	
 			}
@@ -46,24 +49,63 @@
 				position: fixed;
 				background-color: rgba(255, 255, 255, 0.5);
 			}
+			.list-group-item{
+				
+				-webkit-transition: background-color 0.4s ease-out;
+			}
+			.list-group-item:hover{
+				background-color: rgba(117, 155, 178, 0.3);
+			}
+			
+			/*.panel-primary{
+				opacity: 0;
+				height: 1px;
+				margin: 40px;
+				-webkit-transition: min-height 0.4s ease-out, opacity 0.4s ease-out;
+			}
+			.panel-warning{
+				opacity: 0;
+				height: 1px;
+				margin: 40px;
+				-webkit-transition: min-height 0.4s ease-out, opacity 0.4s ease-out;
+			}
+			.panel-success{
+				opacity: 0;
+				height: 1px;
+				margin: 40px;
+				-webkit-transition: min-height 0.4s ease-out, opacity 0.4s ease-out;
+			}
+			.panel-primary:hover{
+				min-height: 100px;
+				opacity: 1.0;
+			}
+			.panel-warning:hover{
+				min-height: 100px;
+				opacity: 1.0;
+			}
+			.panel-success:hover{
+				min-height: 100px;
+				opacity: 1.0;
+			}
+			.panel-title{
+				opacity: 1.0;
+			}*/
 			</style>
 
 			<!-- Navigation Bar -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<ul class="nav navbar-nav">
-				<div class="navbar-header">
+			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<ul class="nav navbar-nav">
+					<div class="navbar-header">
 
-					<p class="navbar-text"><span class="glyphicon glyphicon-header" aria-hidden="true"></span>  |  Welcome</p>	
-				</div>
+						<p class="navbar-text"><span class="glyphicon glyphicon-header" aria-hidden="true"></span>  |  Welcome</p>	
+					</div>
 
-				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="about.html">About me</a></li>
-				<li><a href="project.html">Projects</a></li> <!-- Still need work -->
-				<li><a href="current.html">Random Stuff</a></li> <!-- Still need work -->
-			</ul>
-		</div>
-	</nav>
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="about.html">About me</a></li>
+					<li><a href="project.html">Projects</a></li> <!-- Still need work -->
+					<li><a href="current.html">Random Stuff</a></li> <!-- Still need work -->
+				</ul>
+			</nav>
 
 			<br>
 			<br>
