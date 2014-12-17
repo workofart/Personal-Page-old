@@ -49,46 +49,58 @@
 				position: fixed;
 				background-color: rgba(255, 255, 255, 0.5);
 			}
-			.list-group-item{
-				
-				-webkit-transition: background-color 0.4s ease-out;
+			/*.academic{
+				opacity: 0;	
+				-webkit-transition: background-color 0.4s ease-out, opacity 0.4s ease-out;
+			}
+			.work{
+				opacity: 0;
+			}
+			.culture{
+				opacity: 0;
 			}
 			.list-group-item:hover{
 				background-color: rgba(117, 155, 178, 0.3);
 			}
 			
-			/*.panel-primary{
-				opacity: 0;
+			.panel-primary{
+
 				height: 1px;
 				margin: 40px;
 				-webkit-transition: min-height 0.4s ease-out, opacity 0.4s ease-out;
 			}
 			.panel-warning{
-				opacity: 0;
+
 				height: 1px;
 				margin: 40px;
 				-webkit-transition: min-height 0.4s ease-out, opacity 0.4s ease-out;
 			}
 			.panel-success{
-				opacity: 0;
 				height: 1px;
 				margin: 40px;
 				-webkit-transition: min-height 0.4s ease-out, opacity 0.4s ease-out;
 			}
 			.panel-primary:hover{
 				min-height: 100px;
-				opacity: 1.0;
+
+			}
+			.panel-primary:hover > .academic{
+				opacity: 1;
+				margin-bottom: 110px;
 			}
 			.panel-warning:hover{
-				min-height: 100px;
-				opacity: 1.0;
+				min-height: 200px;
+
+			}
+			.panel-warning:hover > .work{
+				opacity: 1;
+
 			}
 			.panel-success:hover{
 				min-height: 100px;
-				opacity: 1.0;
 			}
-			.panel-title{
-				opacity: 1.0;
+			.panel-success:hover > .culture{
+				opacity: 1;
 			}*/
 			</style>
 
@@ -125,7 +137,7 @@
 							<div class="panel-heading">
 								<h3 class="panel-title">Academic Background:</h3>
 							</div>
-							<ul class="list-group">
+							<ul class="list-group academic">
 								<li class="list-group-item">Computer Science and Economics <span class="badge progress-bar-info">2014-2016 expected</span></li>
 								<li class="list-group-item">Business Administration <span class="badge progress-bar-info">2013-2014</span></li>
 								<li class="list-group-item">Economics <span class="badge progress-bar-info">2011-2013</span></li>
@@ -137,7 +149,7 @@
 							<div class="panel-heading">
 								<h3 class="panel-title">Work Background:</h3>
 							</div>
-							<ul class="list-group">
+							<ul class="list-group work">
 								<li class="list-group-item">Consulting Firm - Business Technology Analyst <span class="badge progress-bar-warning">2014 Summer - Toronto, Canada</span></li>
 								<li class="list-group-item">Consulting Firm - Part-time Assistant <span class="badge progress-bar-warning">2013 Summer - Beijing, China</span></li>
 								<li class="list-group-item">NGO - Event Coordinator <span class="badge progress-bar-warning">2012 Summer - Beijing, China</span></li>
@@ -150,7 +162,7 @@
 							<div class="panel-heading">
 								<h3 class="panel-title">Cultural Background:</h3>
 							</div>
-							<ul class="list-group">
+							<ul class="list-group culture">
 								<li class="list-group-item">University <span class="badge progress-bar-success">Canada</span></li>
 								<li class="list-group-item">Middle School & High School <span class="badge progress-bar-success">China</span></li>
 								<li class="list-group-item">Elementary School <span class="badge progress-bar-success">China, Japan, Canada</span></li>

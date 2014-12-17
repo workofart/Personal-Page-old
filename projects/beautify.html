@@ -62,11 +62,13 @@
 				border: 1.8px solid #000000;
 				padding: 3px;
 				margin: 5px;
+				-webkit-transition: width 0.6s ease;
 
 			}
 			.snapShot:hover{
 				background: #000000;
 				opacity: 0.7;
+				width: 100px;
 			}
 			.videoSnap{
 				height: 80%;
@@ -130,9 +132,11 @@
 				background-color: #105B63;
 				color: #FFD34E;
 				text-align: center;
+				-webkit-transition: transform 0.3s ease-out;
 			}
 			.box1:hover{
 				background-color: #FFFFFF;
+				-webkit-transform: rotate(360deg) translate(60px,-60px) scale(2,2);
 			}
 			.box2{
 				display: inline-block;
@@ -144,11 +148,11 @@
 				background-color: #BD4932;
 				color: #FFFAD5;
 				text-align: center;
-				-webkit-transition: color 0.4s ease;
-
+				-webkit-transition: transform 0.3s ease-out;
 			}
 			.box2:hover{
 				background-color: #000000;
+				-webkit-transform: rotate(720deg) translate(120px,-120px) scale(5,5);
 			}
 			.item{
 				background-color: rgba(178,131,70,1.0);
@@ -204,7 +208,7 @@
 						</canvas>
 					</div>
 					<div class="col-md-4 whiten-more text-font">
-						<h3>Images</h3>
+						<h3>Bubbly Images</h3>
 						<img class="snapShot" src="../img/beautify/blue.png" alt="">
 						<img class="snapShot" src="../img/beautify/blueprint.jpg" alt="">
 						<img class="snapShot" src="../img/beautify/Brain.png" alt="">
@@ -267,7 +271,7 @@
 						</form>
 					</div>
 					<div class="col-md-4 whiten-more text-font">
-						<h3>CSS Boxes</h3>
+						<h3>CSS "Spinning Boxes"</h3>
 						<div class="box1">Box1</div>
 						<div class="box1">Box1</div>
 						<div class="box1">Box1</div>
