@@ -1,0 +1,86 @@
+body { 
+	/*linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),*/
+	background-image: url("../img/Skyline.jpg");
+	background-size: cover, contain;
+	/*background-color: rgba(0, 0, 0, 0.2);  	*/
+			  /*background: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1));
+			  background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1));
+			  background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));*/
+
+			}
+			.navbar{
+				opacity: 0.9;
+			}
+			.darken {
+				background-color: rgba(0, 0, 0, 0.2);  	
+			}
+			.whiten {
+				background-color: rgba(255, 255, 255, 0.4);
+			}
+			.header-font {
+				font-family: 'Comfortaa', cursive;
+			}
+			.text-font {
+				font-family: 'Raleway', sans-serif;
+			}
+			.footer {
+				width: 100%;
+				height: 20px;
+				bottom: 0px;
+				left: 0;
+				position: fixed;
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+			/*.academic{
+				opacity: 0;	
+				-webkit-transition: background-color 0.4s ease-out, opacity 0.4s ease-out;
+			}
+			.work{
+				opacity: 0;
+			}
+			.culture{
+				opacity: 0;
+			}
+			.list-group-item:hover{
+				background-color: rgba(117, 155, 178, 0.3);
+			}
+			
+			.panel-primary{
+
+				height: 1px;
+				margin: 40px;
+				-webkit-transition: min-height 0.4s ease-out, opacity 0.4s ease-out;
+			}
+			.panel-warning{
+
+				height: 1px;
+				margin: 40px;
+				-webkit-transition: min-height 0.4s ease-out, opacity 0.4s ease-out;
+			}
+			.panel-success{
+				height: 1px;
+				margin: 40px;
+				-webkit-transition: min-height 0.4s ease-out, opacity 0.4s ease-out;
+			}
+			.panel-primary:hover{
+				min-height: 100px;
+
+			}
+			.panel-primary:hover > .academic{
+				opacity: 1;
+				margin-bottom: 110px;
+			}
+			.panel-warning:hover{
+				min-height: 200px;
+
+			}
+			.panel-warning:hover > .work{
+				opacity: 1;
+
+			}
+			.panel-success:hover{
+				min-height: 100px;
+			}
+			.panel-success:hover > .culture{
+				opacity: 1;
+			}*/
