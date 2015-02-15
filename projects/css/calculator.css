@@ -32,6 +32,8 @@
 		/*box-sizing: padding-box;*/
 		font-family: 'Raleway', sans-serif;	
 		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
 		display: inline;
 		width: 122.5px;
 		height: 120px;
@@ -55,6 +57,8 @@
 		/*box-sizing: padding-box;*/
 		font-family: 'Raleway', sans-serif;	
 		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
 		display: inline;
 		height: 120px;
 		width: 243px;
@@ -80,6 +84,8 @@
 		text-align: center;
 		color: rgb(100,88,82);
 		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
 	}
 	.btn-back:hover{
 		color: red;
