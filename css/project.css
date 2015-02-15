@@ -24,6 +24,8 @@ body {
 				font-family: 'Raleway', sans-serif;
 				color: transparent;
 				-webkit-transition: color 0.5s ease-out;
+				-o-transition: color 0.5s ease-out;
+				transition: color 0.5s ease-out;
 				text-align: left 
 			}
 			.footer {
@@ -38,8 +40,10 @@ body {
 				background: linear-gradient(to right bottom,#3CAFFC,#1E5E87);
 				color: linear-gradient(to right bottom,#3CAFFC,#1E5E87);
 				box-shadow: 0 2px 2px rgba(44,62,80,0.7);
-				padding: 30px;
-				-webkit-transition: color 0.5s ease-out;	
+				padding: 30px;	
+				-webkit-transition: color 0.5s ease-out;
+				-o-transition: color 0.5s ease-out;
+				transition: color 0.5s ease-out;
 				min-height: 460px;
 				min-width: 460px;
 				text-align: center;
@@ -55,7 +59,9 @@ body {
 				box-shadow: 0 1px 1px black;
 				background-color: #263248;
 				color: #FFFFFF;
-				-webkit-transition: background-color 0.5s ease-out;	
+				-webkit-transition: background-color 0.5s ease-out;
+				-o-transition: background-color 0.5s ease-out;
+				transition: background-color 0.5s ease-out;
 			}
 			.btn-default:hover{
 				background-color: #FFFFFF;
