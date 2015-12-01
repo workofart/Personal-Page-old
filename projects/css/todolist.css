@@ -1,6 +1,6 @@
 body { 
 	/*linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),*/
-	background-image: url("../../img/Skyline.jpg");
+	background-image: url("../../img/grid-bg.jpg");
 	background-size: cover;
 	/*background-color: rgba(0, 0, 0, 0.2);  	*/
 			  /*background: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1));
@@ -31,4 +31,5 @@ body {
 			}
 			.todolist {
 				background-color: rgba(240,248,255,0.6);
+				margin-top: 100px;
 			}

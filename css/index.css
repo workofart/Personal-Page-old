@@ -1,5 +1,5 @@
 body { 
-		background-image: url("../img/Skyline.jpg");
+		background-image: url("../img/grid-bg.jpg");
 		background-size: cover;
 	}
 	.navbar{
@@ -28,7 +28,7 @@ body {
 		vertical-align: middle;
 		padding-left: 80px;
 		padding-right: 80px;
-		padding-bottom: 80px;
+		padding-bottom: 40px;
 		padding-top: 25px;
 		margin-top: 50px;
 		background-color: rgba(64,64,64,0.75);

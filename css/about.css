@@ -1,6 +1,6 @@
 body { 
 	/*linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),*/
-	background-image: url("../img/Skyline.jpg");
+	background-image: url("../img/grid-bg.jpg");
 	background-size: cover, contain;
 	/*background-color: rgba(0, 0, 0, 0.2);  	*/
 			  /*background: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1));
@@ -19,6 +19,7 @@ body {
 			}
 			.header-font {
 				font-family: 'Comfortaa', cursive;
+				color: white;
 			}
 			.text-font {
 				font-family: 'Raleway', sans-serif;
@@ -41,7 +42,7 @@ body {
 				opacity: 1.0;
 			}
 			.content {
-				padding: 30px;
+				padding: 20px;
 				margin: 10px;
 				/*opacity: 0.3;*/
 				-webkit-transition: opacity 0.4s ease;
@@ -64,6 +65,9 @@ body {
 			}
 			.dropdown-menu{
 				padding: 1px;
+			}
+			.container{
+				margin-left: 20px;
 			}
 			/*.list-group-item{
 				opacity: 0;

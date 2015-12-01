@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>To-do List</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Bootstrap -->
-	<link href="../css/bootstrap.min.css" rel="stylesheet">
-	<!-- Todo List CSS -->
-	<link href="css/todolist.css" rel="stylesheet">
-	<!-- Header Font -->
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-	<!-- Text Font -->
-	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	
-	<a class="btn btn-danger btn-lg" href="../project.html" role="button">Back to projects</a>
+<?php  $root = realpath($_SERVER["DOCUMENT_ROOT"]); include $root.'/components/header.php';?>
+<!-- ToDolist CSS -->
+<link href="css/todolist.css" rel="stylesheet">
 
 	<div class="container" onload="numItems()">
 		<div class="row">
@@ -50,11 +33,7 @@
 	</div>
 
 
-
-	<!-- Footer -->
-	<div class="footer">
-		<div class="small"><center>Copyright &copy 2014 Henry Pan &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp hanxiangp@gmail.com</center></div>
-	</div>
+<?php include $root.'/components/footer.php';?>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->

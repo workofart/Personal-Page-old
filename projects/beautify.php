@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Beautify Using Javascript</title>
-	<!-- Bootstrap -->
-	<link href="../css/bootstrap.min.css" rel="stylesheet">
-	<!-- Beautify CSS -->
-	<link href="css/beautify.css" rel="stylesheet">
-	<!-- Header Font -->
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-	<!-- Text Font -->
-	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<style>
-	
-			</style>
-
-			<a class="btn btn-danger btn-lg" href="../project.html" role="button">Back to projects</a>
-
+<?php  $root = realpath($_SERVER["DOCUMENT_ROOT"]); include $root.'/components/header.php';?>
+<!-- Beautify CSS -->
+<link href="css/beautify.css" rel="stylesheet">
 			<br>
 			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 whiten-more text-font">
@@ -1515,10 +1502,7 @@
 			</div>
 			<br>
 			<br>
-			<!-- Footer -->
-<div class="footer">
-	<div class="small"><center>This site is powered by HTML5, CSS3, jQuery, Javascript.  &nbsp&nbsp Frameworks: Twitter Bootstrap &nbsp&nbsp&nbsp  Copyright &copy 2014 Henry Pan &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp hanxiangp@gmail.com</center></div>
-</div>
+			<?php include $root.'/components/footer.php';?>
 			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<!-- Include all compiled plugins (below), or include individual files as needed -->

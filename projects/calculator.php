@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Calculator</title>
-	<link rel="stylesheet" href="css/calculator.css" type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>	
-</head>
-<body>
-	
-	<a class="btn-back" href="../project.html" role="button">Back to projects</a>
+<?php  $root = realpath($_SERVER["DOCUMENT_ROOT"]); include $root.'/components/header.php';?>
+<!-- Calculator CSS -->
+<link href="css/calculator.css" rel="stylesheet">
 
 	<div class="container">
 		<div class="header"><b>Henry's Calculator</b></div>
@@ -40,12 +31,13 @@
 		</div>
 		<div class="row">
 			<div class="col"><button class="btn-2" onclick="display(0)">0</button></div>
-			<div class="col"><button class="btn" onclick="display('.')"><img src="../img/dot.png" style="width:5%; height: 10%" alt=""></button></div>
-			<div class="col"><button class="btn btn-right" onclick="evaluateExp();"><img src="../img/equal.png" style="width:15%; height:15%" alt=""></button></div>
+			<div class="col-dot"><button class="btn" onclick="display('.')"><img src="../img/dot.png" style="width:5%; height: 10%" alt=""></button></div>
+			<div class="col-equal"><button class="btn btn-equal" onclick="evaluateExp();"><img src="../img/equal.png" style="width:15%; height:15%" alt=""></button></div>
 		</div>
 	</div> <!-- End Comtainer -->
 
 	<h3>Inspired by OSX calculator by Apple</h3>
 	<script src="js/calculator.js"></script>
+	<?php include $root.'/components/footer.php';?>
 </body>
 </html>
