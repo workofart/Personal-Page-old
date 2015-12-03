@@ -1,24 +1,9 @@
-workofart.github.io
+Personal Page (www.henrypan.com)
 ===================
 
-Contributions
+Languages and Frameworks
 ----------------------
-CSS - Twitter Bootstrap
-HTML - coded by hand
-Javascript - coded by hand
+CSS/Javascript - Twitter Bootstrap
+HTML5/CSS3 - Handcoded
+Javascript - Projects (Handcoded)
 
-Structure
---------------
-Personal Page
-- img
-- js
-- css
-- fonts
-- projects
-
-
-index.html
-about.html
-project.html
-current.html
-todolist.html
